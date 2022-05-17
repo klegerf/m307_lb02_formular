@@ -26,7 +26,7 @@ function checkRequired(inputArr) {
   let isRequired = false;
   inputArr.forEach(function(input) {
     if (input.value.trim() === '') {
-      showError(input, `${getFieldName(input)} ist anzugeben.`);
+      showError(input, `${getFieldName(input)} ist anzugeben`);
       isRequired = true;
     } else {
       showSuccess(input);
@@ -77,7 +77,7 @@ function checkAntwort(input) {
   if (input.checked) {
     showSuccess(input);
   } else {
-    showError(input, `${getFieldName(input)} ist anzugeben.`);
+    showError(input, `${getFieldName(input)} ist anzugeben`);
   }
 }
 
@@ -88,7 +88,7 @@ function checkThema(input) {
   if (val > 0) {
     showSuccess(input);
   } else {
-    showError(input, `${getFieldName(input)} ist anzugeben.`);
+    showError(input, `${getFieldName(input)} ist anzugeben`);
   }
 }
 
