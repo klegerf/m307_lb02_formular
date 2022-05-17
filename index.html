@@ -254,20 +254,24 @@
                             <small>Error message</small>
                         </div>
 
-                        <div>
-                            <div class ="pb-2">Bitte wähle ein Thema aus:</div>
-                            <select name="thema">
-                                <option value="val1" selected>Anfrage für einen Auftritt</option>
-                                <option value="val2">Anfrage für einen Workshop</option>
-                                <option value="val3">Sonstiges</option>
+                        <div class="form-control">
+                            <div class ="pb-2">Grund der Kontaktaufnahme:</div>
+                            <select name="thema" id="thema">
+                                <option value="0" selected>Bitte Thema wählen</option>
+                                <option value="1">Anfrage für einen Auftritt</option>
+                                <option value="2">Anfrage für einen Workshop</option>
+                                <option value="3">Sonstiges</option>
                             </select>
+                            <div style="padding-top: 2rem">
+                                <small>Error message</small>
+                            </div>
                         </div>
 
                         <div class="form-control">
                             <div class="mt-5">Ich wünsche eine Kontaktaufnahme per...</div>
                             <label for="antwort"></label>
-                            <input type="radio" name="room" value="budget" id="antwort"/>Budget
-                            <input type="radio" name="room" value="standard"/>Standard
+                            <input type="radio" name="kontaktaufnahme" value="email" id="antwort"/>E-Mail
+                            <input type="radio" name="kontaktaufnahme" value="telefon"/>Telefon
                             <small>Error message</small>
                         </div>
 

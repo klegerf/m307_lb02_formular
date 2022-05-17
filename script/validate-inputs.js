@@ -5,6 +5,7 @@ const nachname = document.getElementById('nachname');
 const email = document.getElementById('email');
 const telefon = document.getElementById('telefon');
 const antwort = document.getElementById('antwort');
+const thema = document.getElementById('thema');
 
 // Show input error message
 function showError(input, message) {
@@ -69,6 +70,17 @@ function checkAntwort(input) {
   }
 }
 
+// Check if a "Thema" is selected
+function checkThema(input) {
+  let val = input.options[input.selectedIndex].value;
+  console.log(`Thema: ${val}`);
+  if (val > 0) {
+    showSuccess(input);
+  } else {
+    showError(input, `${getFieldName(input)} ist anzugeben.`);
+  }
+}
+
 // Get fieldname
 function getFieldName(input) {
   return input.id.charAt(0).toUpperCase() + input.id.slice(1);
@@ -76,12 +88,13 @@ function getFieldName(input) {
 
 // Validate form input elements
 function validateForm(){
-  if(!checkRequired([vorname, nachname, email, telefon, antwort])){
+  if(!checkRequired([vorname, nachname, email, telefon, antwort, thema])){
     checkLength(vorname, 3, 15);
     checkLength(nachname, 3, 15);
     checkLength(telefon, 10, 13);
     checkEmail(email);
     checkAntwort(antwort);
+    checkThema(thema);
   }
 }
 
