@@ -36,7 +36,7 @@ function checkRequired(inputArr) {
   return isRequired;
 }
 
-// Check email is valid
+// Check if email is valid
 function checkEmail(input) {
   const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   if (re.test(input.value.trim())) {
@@ -45,6 +45,17 @@ function checkEmail(input) {
     showError(input, 'Email-Adresse ist nicht gültig');
   }
 }
+
+// Check if phone number is valid
+function checkPhone(input) {
+  const swiss = /^(?:(?:|0{1,2}|\+{0,2})41(?:|\(0\))|0)([1-9]\d)(\d{3})(\d{2})(\d{2})$/;
+  if (swiss.test(input.value.trim())) {
+    showSuccess(input);
+  } else {
+    showError(input,'Telefonnummer ist nicht gültig');
+  }
+}
+
 
 // Check input length
 function checkLength(input, min, max) {
@@ -88,10 +99,11 @@ function getFieldName(input) {
 
 // Validate form input elements
 function validateForm(){
-  if(!checkRequired([vorname, nachname, email, telefon, antwort, thema])){
+  if(!checkRequired([vorname, nachname, email, telefon, antwort, thema, ])){
     checkLength(vorname, 3, 15);
     checkLength(nachname, 3, 15);
     checkLength(telefon, 10, 13);
+    checkPhone(telefon);
     checkEmail(email);
     checkAntwort(antwort);
     checkThema(thema);
