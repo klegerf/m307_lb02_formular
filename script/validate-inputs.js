@@ -56,7 +56,6 @@ function checkPhone(input) {
   }
 }
 
-
 // Check input length
 function checkLength(input, min, max) {
   if (input.value.length < min) {
@@ -109,7 +108,6 @@ function validateForm(){
     checkThema(thema);
   }
 }
-
 
 // Event listeners
 form.addEventListener('submit', function(e) {
