@@ -253,7 +253,6 @@
                             <input type="tel" id="telefon" placeholder="Telefon" />
                             <small>Error message</small>
                         </div>
-
                         <div class="form-control">
                             <div class ="pb-2">Grund der Kontaktaufnahme:</div>
                             <select name="thema" id="thema">
@@ -262,34 +261,20 @@
                                 <option value="2">Anfrage für einen Workshop</option>
                                 <option value="3">Sonstiges</option>
                             </select>
-                            <div style="padding-top: 2rem">
+                            <div class="pt-2">
                                 <small>Error message</small>
                             </div>
                         </div>
-
                         <div class="form-control">
-                            <div class="mt-5">Ich wünsche eine Kontaktaufnahme per...</div>
+                            <div class="mt-3">Ich wünsche eine Kontaktaufnahme per...</div>
                             <label for="antwort"></label>
                             <input type="radio" name="kontaktaufnahme" value="email" id="antwort"/>E-Mail
                             <input type="radio" name="kontaktaufnahme" value="telefon"/>Telefon
-                            <small>Error message</small>
-                        </div>
-
-                        <!-- Antwort mit radio button von bootstrap
-                        <div>
-                            <div class="mt-5">Ich wünsche eine Kontaktaufnahme per...</div>
-                            <div class="form-check form-check-inline" id="antwort">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                                <label class="form-check-label" for="inlineRadio1">E-Mail</label>
+                            <div class="pt-2">
+                                <small>Error message</small>
                             </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                                <label class="form-check-label" for="inlineRadio2">Telefon</label>
-                             </div>
-                        </div>  -->
-
-                        <button type="submit">Absenden</button>
-
+                        </div>
+                        <button type="submit" class="submit-button">Absenden</button>
                     </form>
                 </div>
             </div>
