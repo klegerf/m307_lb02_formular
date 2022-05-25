@@ -23,6 +23,12 @@ function validateUser(userObj) {
     result = validateLib.checkRequired("email", userObj.email);
     if (result.isNotValid) { return result; }
 
+    /*result = validateLib.checkRequired("thema", userObj.thema);
+    if (result.isNotValid) { return result; }
+
+    result = validateLib.checkRequired("antwort", userObj.antwort);
+    if (result.isNotValid) { return result; }*/
+
     /*result = validateLib.checkRequired("password", userObj.password);
     if (result.isNotValid) { return result; }*/
 
@@ -46,6 +52,12 @@ function validateUser(userObj) {
     //check phone syntax
     result = validateLib.checkPhone("phone", userObj.phone);
     if (result.isNotValid) { return result; }
+
+    /*result = validateLib.checkThema("thema", userObj.thema);
+    if (result.isNotValid) { return result; }
+
+    result = validateLib.checkAntwort("antwort", userObj.antwort);
+    if (result.isNotValid) { return result; } */
 
     //all inputs are valid and isNotValid=false
     return false;

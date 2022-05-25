@@ -26,7 +26,7 @@ function checkEmail(id,input) {
     if (!re.test(input.trim())) {
         result = {
             isNotValid: true,
-            msg: showError(id, 'Email-Adresse ist nicht gültig')
+            msg: showError(id, '${id} ist nicht gültig')
         }
     }
     return result;
@@ -43,14 +43,45 @@ function checkPhone(id,input) {
     if (!swiss.test(input.trim())) {
         result = {
             isNotValid: true,
-            msg: showError(id, 'Telefonnummer ist nicht gültig')
+            msg: showError(id, '${id} ist nicht gültig')
         }
     }
     return result;
 }
 
-//TODO: Check article for throwing errors in node js
-// https://stackoverflow.com/questions/33086247/throwing-an-error-in-node-js
+// Check if a "Thema" is selected -> funktioniert noch nicht
+/*function checkThema(id, input) {
+    let result = {
+        isNotValid: false,
+        msg: showSuccess(id)
+    }
+
+    //const val = input.options[input.selectedIndex].value;
+    if (input.value() < 1) {
+        result = {
+            isNotValid: true,
+            msg: showError(id,
+                `${id} muss ausgewählt werden`)
+        }
+    }
+    return  result;
+}*/
+
+// Check if a radio button is checked
+/*function checkAntwort(id, input) {
+    let result = {
+        isNotValid: true,
+        msg: showError(id, `${id} muss ausgewählt werden`)
+    }
+    if (input.checked) {
+        result = {
+            isNotValid: false,
+            msg: showSuccess(id)
+        }
+    }
+    return result;
+}*/
+
 
 // Check required fields
 function checkRequired(id, input) {
@@ -64,7 +95,7 @@ function checkRequired(id, input) {
         //.. then it's not valid
         result = {
             isNotValid: true,
-            msg: showError(id, `${input.toString()} is required`)
+            msg: showError(id, `${input.toString()} muss angegeben werden`)
         }
     }
     //return validation result
@@ -95,6 +126,8 @@ function checkLength(id, input, min, max) {
     return result;
 }
 
+
+
 /**
  *  Export validation functions for further usage.
  *  function to export WITHOUT brackets!
@@ -103,5 +136,7 @@ module.exports = {
     checkEmail,
     checkLength,
     checkRequired,
-    checkPhone
+    checkPhone,
+    /*checkThema,
+    checkAntwort*/
 }

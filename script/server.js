@@ -45,9 +45,6 @@ app.use(bodyParser.json());
 // support encoded bodies
 app.use(bodyParser.urlencoded({ extended: true }));
 
-/*  1. Writing to file
-    https://stackabuse.com/reading-and-writing-json-files-with-node-js/
- */
 
 app.post('/register', (req, res) => {
 
@@ -58,7 +55,9 @@ app.post('/register', (req, res) => {
         "vorname": req.body.user.vorname,
         "nachname": req.body.user.nachname,
         "email": req.body.user.email,
-        "phone": req.body.user.phone
+        "phone": req.body.user.phone,
+        "thema": req.body.user.thema,
+        "antwort": req.body.user.antwort
     }
 
     let result = Validation.validateUser(userObj);
