@@ -32,7 +32,8 @@ function checkEmail(id,input) {
     return result;
 }
 
-// Check email is valid
+
+// Check if phone is valid
 function checkPhone(id,input) {
     //Default: is valid
     let result = {
@@ -49,15 +50,16 @@ function checkPhone(id,input) {
     return result;
 }
 
+
 // Check if a "Thema" is selected -> funktioniert noch nicht
-/*function checkThema(id, input) {
+/*function checkThema(id,input) {
     let result = {
         isNotValid: false,
         msg: showSuccess(id)
     }
 
-    //const val = input.options[input.selectedIndex].value;
-    if (input.value() < 1) {
+    const val = input.options[input.selectedIndex].value;
+    if (val < 1) {
         result = {
             isNotValid: true,
             msg: showError(id,
@@ -67,7 +69,7 @@ function checkPhone(id,input) {
     return  result;
 }*/
 
-// Check if a radio button is checked
+// Check if a radio button is checked -> funktioniert noch nicht
 /*function checkAntwort(id, input) {
     let result = {
         isNotValid: true,
