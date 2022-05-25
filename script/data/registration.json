@@ -1,0 +1,131 @@
+[
+  {
+    "id": "a24185dc-6632-44ad-9dfe-ab423e351cb9",
+    "username": "joyjill",
+    "email": "hmuster@beispiel.ch",
+    "password": "hellotest"
+  },
+  {
+    "id": "14620f14-5fd8-4353-ae0e-588450fa9010",
+    "username": "person2",
+    "email": "hmuster@beispiel.ch",
+    "password": "hellotest"
+  },
+  {
+    "id": "9c67a339-6cf1-4ad6-a26e-180ae0bc655d",
+    "username": "fabiennekleger",
+    "email": "fabiennekleger@hotmail.ch",
+    "password": "testtest202!"
+  },
+  {
+    "id": "7fb8329b-b11a-4c04-ab88-e983ba930567",
+    "username": "hdasjg dlasg",
+    "email": "fabiennekleger@hotmail.ch",
+    "password": "testtest202!"
+  },
+  {
+    "id": "f6de35b6-ba60-40a3-a5de-c4cc9cdd3b7f",
+    "username": "hdassssss",
+    "email": "fabiennekleger@hotmail.ch",
+    "password": "testtest202!"
+  },
+  {
+    "id": "c6701ba7-d44c-4058-a82b-e73858ec6863",
+    "username": "ssdfhfh",
+    "email": "sdgd@sghotmail.ch",
+    "password": "testtest202!"
+  },
+  {
+    "id": "bbd45eb1-99ef-4e5d-b1cd-6f7d869d7dd0",
+    "username": "fabifkl",
+    "email": "fabiennekleger@hotmail.ch",
+    "password": "testtest202!",
+    "phone": "0791012475"
+  },
+  {
+    "id": "44542087-8089-4b7f-b159-333dbfe8615c",
+    "username": "fabifkl",
+    "email": "fabiennekleger@hotmail.ch",
+    "password": "testtest202!",
+    "phone": ""
+  },
+  {
+    "id": "e35f92c6-1d1b-480c-a2cc-1ebb0e7407a5",
+    "username": "fabifkl",
+    "email": "fabiennekleger@hotmail.ch",
+    "password": "testtest202!",
+    "phone": "0791012475"
+  },
+  {
+    "id": "ff085c72-dda5-4be7-8ba6-83914edaf844",
+    "username": "fabifkl",
+    "email": "fabiennekleger@hotmail.ch",
+    "password": "testtest202!",
+    "phone": "+41791012475"
+  },
+  {
+    "id": "1f6dd07b-ce88-48ce-a83b-eb4a1a07fb22",
+    "vorname": "Fabienne",
+    "nachname": "Kleger",
+    "username": "fabifkl",
+    "email": "fabiennekleger@hotmail.ch",
+    "password": "testtest202!",
+    "phone": "+41791012475"
+  },
+  {
+    "id": "a9b955fa-f268-4e03-ac82-8c262e37640a",
+    "vorname": "Fabienne",
+    "nachname": "KLEGER",
+    "email": "fabiennekleger@hotmail.ch",
+    "phone": "+41791012475"
+  },
+  {
+    "id": "0942d624-ce29-46cd-8b10-b4f033e1f2b5",
+    "vorname": "Fabienne",
+    "nachname": "KLEGER",
+    "email": "fabiennekleger@hotmail.ch",
+    "phone": "+41791012475"
+  },
+  {
+    "id": "f0935aac-e658-406d-a6fe-b0f6137cc99f",
+    "vorname": "Luisa",
+    "nachname": "KLEGER",
+    "email": "fabiennekleger@hotmail.ch",
+    "phone": "+41791012475"
+  },
+  {
+    "id": "6e2794df-a072-45ba-b721-94745e1765d2",
+    "vorname": "Luisa",
+    "nachname": "KLEGER",
+    "email": "fabiennekleger@hotmail.ch",
+    "phone": "+41791012475"
+  },
+  {
+    "id": "85a88b9a-4749-4b21-a885-ada1982330a5",
+    "vorname": "Luisa",
+    "nachname": "Müller",
+    "email": "luisamueller@hotmail.ch",
+    "phone": "0775504030"
+  },
+  {
+    "id": "3669d55a-f7a2-47ef-b11c-aaaac4b6a030",
+    "vorname": "Luisa",
+    "nachname": "Müller",
+    "email": "luisamueller@hotmail.ch",
+    "phone": "0775504030"
+  },
+  {
+    "id": "967f3105-7085-4fdd-b2ef-a041a42fa666",
+    "vorname": "Luisa",
+    "nachname": "Test",
+    "email": "luisamueller@hotmail.ch",
+    "phone": "0775504030"
+  },
+  {
+    "id": "cbc32881-ce11-418c-bf13-4303b72a7972",
+    "vorname": "Luisa",
+    "nachname": "Test2",
+    "email": "luisamueller@hotmail.ch",
+    "phone": "0775504030"
+  }
+]
