@@ -21,10 +21,10 @@ function validateUser(userObj) {
     if (result.isNotValid) { return result; }
 
     /*result = validateLib.checkRequired("thema", userObj.thema);
-    if (result.isNotValid) { return result; }
+    if (result.isNotValid) { return result; }*/
 
     result = validateLib.checkRequired("antwort", userObj.antwort);
-    if (result.isNotValid) { return result; }*/
+    if (result.isNotValid) { return result; }
 
     //check length
     result = validateLib.checkLength("vorname",userObj.vorname, 3, 15);
@@ -42,10 +42,10 @@ function validateUser(userObj) {
     if (result.isNotValid) { return result; }
 
     /*result = validateLib.checkThema("thema", userObj.thema, val);
-    if (result.isNotValid) { return result; }
+    if (result.isNotValid) { return result; }*/
 
     result = validateLib.checkAntwort("antwort", userObj.antwort);
-    if (result.isNotValid) { return result; } */
+    if (result.isNotValid) { return result; }
 
     //all inputs are valid and isNotValid=false
     return false;

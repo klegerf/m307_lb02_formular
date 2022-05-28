@@ -71,20 +71,20 @@ function checkLength(input, min, max) {
   }
 }
 
-// Check if a radio button is checked
-function checkAntwort(input) {
-  if (input.checked) {
+// Check if a "Thema" is selected
+function checkThema(input) {
+  let val = input.options[input.selectedIndex].value;
+
+  if (val > 0) {
     showSuccess(input);
   } else {
     showError(input, `${getFieldName(input)} ist anzugeben`);
   }
 }
 
-// Check if a "Thema" is selected
-function checkThema(input) {
-  let val = input.options[input.selectedIndex].value;
-  console.log(`Thema: ${val}`);
-  if (val > 0) {
+// Check if a radio button is checked
+function checkAntwort(input) {
+  if (input.checked) {
     showSuccess(input);
   } else {
     showError(input, `${getFieldName(input)} ist anzugeben`);

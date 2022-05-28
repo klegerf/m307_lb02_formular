@@ -56,8 +56,8 @@ app.post('/register', (req, res) => {
         "nachname": req.body.user.nachname,
         "email": req.body.user.email,
         "phone": req.body.user.phone,
-        /*"thema": req.body.user.thema,
-        "antwort": req.body.user.antwort*/
+        /*"thema": req.body.user.thema*/
+        "antwort": req.body.user.antwort
     }
 
     let result = Validation.validateUser(userObj);

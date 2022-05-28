@@ -51,15 +51,15 @@ function checkPhone(id,input) {
 }
 
 
-// Check if a "Thema" is selected -> funktioniert noch nicht
+//Check if a "Thema" is selected -> funktioniert noch nicht
 /*function checkThema(id,input) {
+    const val = input.options[input.selectedIndex].value;
     let result = {
         isNotValid: false,
         msg: showSuccess(id)
     }
 
-    const val = input.options[input.selectedIndex].value;
-    if (val < 1) {
+    if (val.selectedIndex == 0) {
         result = {
             isNotValid: true,
             msg: showError(id,
@@ -75,8 +75,13 @@ function checkPhone(id,input) {
         isNotValid: true,
         msg: showError(id, `${id} muss ausgewählt werden`)
     }
-    if (input.checked) {
+    if (...) {
         result = {
+            isNotValid: false,
+            msg: showSuccess(id)
+        }
+    } else if (...) {
+        result  = {
             isNotValid: false,
             msg: showSuccess(id)
         }
@@ -84,6 +89,15 @@ function checkPhone(id,input) {
     return result;
 }*/
 
+
+/*     } else if (input.checked == true) {
+        result  = {
+            isNotValid: false,
+            msg: showSuccess(id)
+        }
+    }
+    return result;
+}*/
 
 // Check required fields
 function checkRequired(id, input) {
@@ -139,6 +153,7 @@ module.exports = {
     checkLength,
     checkRequired,
     checkPhone,
+    checkAntwort
     /*checkThema,
     checkAntwort*/
 }
