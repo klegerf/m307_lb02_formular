@@ -51,53 +51,60 @@ function checkPhone(id,input) {
 }
 
 
-//Check if a "Thema" is selected -> funktioniert noch nicht
-/*function checkThema(id,input) {
-    const val = input.options[input.selectedIndex].value;
-    let result = {
-        isNotValid: false,
-        msg: showSuccess(id)
-    }
-
-    if (val.selectedIndex == 0) {
-        result = {
-            isNotValid: true,
-            msg: showError(id,
-                `${id} muss ausgewählt werden`)
-        }
-    }
-    return  result;
-}*/
-
-// Check if a radio button is checked -> funktioniert noch nicht
-/*function checkAntwort(id, input) {
+//Check if a "Thema" is selected
+function checkThema(id,input) {
     let result = {
         isNotValid: true,
         msg: showError(id, `${id} muss ausgewählt werden`)
     }
-    if (...) {
+
+    if (input == "0") {
+        result = {
+            isNotValid: true,
+            msg: showError(id, `${id} muss ausgewählt werden`)
+        }
+    }
+    if (input == "1") {
         result = {
             isNotValid: false,
             msg: showSuccess(id)
         }
-    } else if (...) {
-        result  = {
+    }
+    if (input == "2") {
+        result = {
+            isNotValid: false,
+            msg: showSuccess(id)
+        }
+    }
+    if (input == "3") {
+        result = {
+            isNotValid: false,
+            msg: showSuccess(id)
+        }
+    }
+    return  result;
+}
+
+// Check if a radio button is checked
+function checkAntwort(id, input) {
+    let result = {
+        isNotValid: true,
+        msg: showError(id, `${id} muss ausgewählt werden`)
+    }
+    if (input == "Email") {
+        result = {
+            isNotValid: false,
+            msg: showSuccess(id)
+        }
+    }
+    if (input == "Telefon") {
+        result = {
             isNotValid: false,
             msg: showSuccess(id)
         }
     }
     return result;
-}*/
-
-
-/*     } else if (input.checked == true) {
-        result  = {
-            isNotValid: false,
-            msg: showSuccess(id)
-        }
-    }
-    return result;
-}*/
+}
 
 // Check required fields
 function checkRequired(id, input) {
@@ -153,7 +160,6 @@ module.exports = {
     checkLength,
     checkRequired,
     checkPhone,
-    checkAntwort
-    /*checkThema,
-    checkAntwort*/
+    checkAntwort,
+    checkThema
 }

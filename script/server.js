@@ -56,7 +56,7 @@ app.post('/register', (req, res) => {
         "nachname": req.body.user.nachname,
         "email": req.body.user.email,
         "phone": req.body.user.phone,
-        /*"thema": req.body.user.thema*/
+        "thema": req.body.user.thema,
         "antwort": req.body.user.antwort
     }
 

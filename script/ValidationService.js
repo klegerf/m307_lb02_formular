@@ -20,8 +20,8 @@ function validateUser(userObj) {
     result = validateLib.checkRequired("email", userObj.email);
     if (result.isNotValid) { return result; }
 
-    /*result = validateLib.checkRequired("thema", userObj.thema);
-    if (result.isNotValid) { return result; }*/
+    result = validateLib.checkRequired("thema", userObj.thema);
+    if (result.isNotValid) { return result; }
 
     result = validateLib.checkRequired("antwort", userObj.antwort);
     if (result.isNotValid) { return result; }
@@ -41,8 +41,8 @@ function validateUser(userObj) {
     result = validateLib.checkPhone("phone", userObj.phone);
     if (result.isNotValid) { return result; }
 
-    /*result = validateLib.checkThema("thema", userObj.thema, val);
-    if (result.isNotValid) { return result; }*/
+    result = validateLib.checkThema("thema", userObj.thema);
+    if (result.isNotValid) { return result; }
 
     result = validateLib.checkAntwort("antwort", userObj.antwort);
     if (result.isNotValid) { return result; }
@@ -58,18 +58,3 @@ function validateUser(userObj) {
 module.exports = {
     validateUser
 }
-
-
-
-/*let result = validateLib.checkRequired("username", userObj.username);
-if (result.isNotValid) { return result; }*/
-
-/*result = validateLib.checkRequired("password", userObj.password);
-if (result.isNotValid) { return result; }*/
-
-// von Übung
-/*result = validateLib.checkLength("username",userObj.username, 3, 15);
-if (result.isNotValid) { return result; }
-
-result = validateLib.checkLength("password", userObj.password, 6, 25);
-if (result.isNotValid) { return result; }*/
