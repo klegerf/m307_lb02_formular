@@ -26,7 +26,7 @@ function checkEmail(id,input) {
     if (!re.test(input.trim())) {
         result = {
             isNotValid: true,
-            msg: showError(id, '${id} ist nicht gültig')
+            msg: showError(id, `${id} ist nicht gültig`)
         }
     }
     return result;
@@ -43,7 +43,7 @@ function checkPhone(id,input) {
     if (!swiss.test(input.trim())) {
         result = {
             isNotValid: true,
-            msg: showError(id, '${id} ist nicht gültig')
+            msg: showError(id, `${id} ist nicht gültig`)
         }
     }
     return result;

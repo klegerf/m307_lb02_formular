@@ -1,3 +1,11 @@
 [
-
+  {
+    "id": "789c28c8-746a-4a65-a721-fef607772c75",
+    "vorname": "Lena",
+    "nachname": "Müller",
+    "email": "l.mueller@hotmail.ch",
+    "phone": "0791012256",
+    "thema": "1",
+    "antwort": "Telefon"
+  }
 ]
