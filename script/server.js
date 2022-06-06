@@ -23,7 +23,6 @@ server.timeout = 1000 * 60 * 2; // 2 minutes
 const staticPath = './data/';
 const registrationFile = staticPath+'registration.json';
 
-
 // Use middleware to set the default Content-Type
 app.use(function (req, res, next) {
     res.header('Access-Control-Allow-Origin', '*');
@@ -31,7 +30,6 @@ app.use(function (req, res, next) {
     res.header('Content-Type', 'application/json');
     next();
 });
-
 
 //test uuid
 app.get('/test1', (req, res) => {
@@ -44,7 +42,6 @@ app.get('/test1', (req, res) => {
 app.use(bodyParser.json());
 // support encoded bodies
 app.use(bodyParser.urlencoded({ extended: true }));
-
 
 app.post('/register', (req, res) => {
 
@@ -80,4 +77,3 @@ app.post('/register', (req, res) => {
         res.status(201).send(`Danke ${userObj.vorname}, deine Anfrage wurde erfolgreich übermittelt!`);
     }
 });
-

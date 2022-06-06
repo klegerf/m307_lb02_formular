@@ -41,9 +41,11 @@ function validateUser(userObj) {
     result = validateLib.checkPhone("phone", userObj.phone);
     if (result.isNotValid) { return result; }
 
+    //check if thema is selected
     result = validateLib.checkThema("thema", userObj.thema);
     if (result.isNotValid) { return result; }
 
+    //check if antwort is selected
     result = validateLib.checkAntwort("antwort", userObj.antwort);
     if (result.isNotValid) { return result; }
 

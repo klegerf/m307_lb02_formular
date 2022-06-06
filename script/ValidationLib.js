@@ -32,7 +32,6 @@ function checkEmail(id,input) {
     return result;
 }
 
-
 // Check if phone is valid
 function checkPhone(id,input) {
     //Default: is valid
@@ -49,7 +48,6 @@ function checkPhone(id,input) {
     }
     return result;
 }
-
 
 //Check if a "Thema" is selected
 function checkThema(id,input) {
@@ -148,8 +146,6 @@ function checkLength(id, input, min, max) {
     }
     return result;
 }
-
-
 
 /**
  *  Export validation functions for further usage.
