@@ -1,9 +1,3 @@
-/*
-Thema: Registration server
-Einfacher Server, um Benutzer zu registrieren
-Der Server dient zu Übung zur Validierung von Benutzereingaben im Backend.
- */
-
 'use strict';
 
 let express = require("express");
