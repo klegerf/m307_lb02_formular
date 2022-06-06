@@ -19,7 +19,6 @@ const server = app.listen(port);
 console.log(`Running at Port ${port}`);
 server.timeout = 1000 * 60 * 2; // 2 minutes
 
-//Warning: Korrekt setzen!!
 const staticPath = './data/';
 const registrationFile = staticPath+'registration.json';
 
